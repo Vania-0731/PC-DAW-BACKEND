@@ -27,7 +27,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 @RestController
 @RequestMapping("/api/v1/users")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://pc-daw-frontend.vercel.app/")
 @Tag(name = "Gestión de Usuarios", description = "Operaciones CRUD y de roles para usuarios del sistema. Algunos accesibles por usuarios, otros solo por administradores.")
 public class UserController {
 

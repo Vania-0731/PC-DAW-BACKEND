@@ -27,7 +27,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 @RestController
 @RequestMapping("/api/v1/productos")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://pc-daw-frontend.vercel.app/")
 @Tag(name = "Productos", description = "Operaciones de gestión de productos")
 public class ProductoControlador {
 

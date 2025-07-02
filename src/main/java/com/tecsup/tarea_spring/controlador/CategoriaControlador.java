@@ -27,7 +27,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 @RestController
 @RequestMapping("/api/v1/categorias")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://pc-daw-frontend.vercel.app/")
 @Tag(name = "Categorías", description = "Operaciones de gestión de categorías")
 public class CategoriaControlador {
 
