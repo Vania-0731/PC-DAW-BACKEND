@@ -1,5 +1,7 @@
 # PC-DAW-BACKEND 🚀
 
+**Parte del Proyecto Principal:** [https://github.com/Vania-0731/PC4-DAW](https://github.com/Vania-0731/PC4-DAW)
+
 Bienvenida al backend de la aplicación PC-DAW (Programación Concurrente y Distribuida de Aplicaciones Web). Este proyecto proporciona la API RESTful para gestionar productos, categorías y autenticación de usuarios, utilizando Spring Boot y PostgreSQL.
 
 ---
@@ -171,3 +173,4 @@ Para cualquier consulta o sugerencia, no dudes en contactar a:
 * GitHub: [Vania-0731](https://github.com/Vania-0731)
 
 ---
+
