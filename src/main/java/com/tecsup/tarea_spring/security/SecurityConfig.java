@@ -50,8 +50,15 @@ public class SecurityConfig {
                         // Rutas de autenticación
                         .requestMatchers("/api/v1/auth/login").permitAll() // Login sigue siendo público
                         .requestMatchers("/api/v1/auth/register").permitAll() // Ahora cualquiera puede registrarse
-                        // Rutas de Swagger/OpenAPI
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
+                        // Rutas de Swagger/OpenAPI - AÑADE ESTO para mayor robustez
+                        .requestMatchers(
+                                "/swagger-ui/**",
+                                "/swagger-ui.html", // A veces se accede directamente a esta URL
+                                "/v3/api-docs/**",
+                                "/v3/api-docs.yaml", // Si generas el YAML directamente
+                                "/swagger-resources/**", // Recursos adicionales de Swagger
+                                "/webjars/**" // Dependencias JS/CSS servidas por webjars (común en Swagger)
+                        ).permitAll()
                         // Reglas para productos y categorías
                         .requestMatchers(HttpMethod.GET, "/api/v1/productos/**").hasAnyRole("USER", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/api/v1/categorias/**").hasAnyRole("USER", "ADMIN")
