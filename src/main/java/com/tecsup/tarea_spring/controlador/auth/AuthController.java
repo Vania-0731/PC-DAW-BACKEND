@@ -36,7 +36,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody; // Importa el Reque
 
 @RestController
 @RequestMapping("/api/v1/auth")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @Tag(name = "Autenticación", description = "Endpoints para el registro y el inicio de sesión de usuarios.")
 public class AuthController {
 

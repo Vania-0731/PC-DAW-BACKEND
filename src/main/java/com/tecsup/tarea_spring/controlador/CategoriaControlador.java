@@ -27,7 +27,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 @RestController
 @RequestMapping("/api/v1/categorias")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @Tag(name = "Categorías", description = "Operaciones de gestión de categorías")
 public class CategoriaControlador {
 
