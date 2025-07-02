@@ -1,7 +1,7 @@
 # --- ETAPA DE CONSTRUCCIÓN (BUILD STAGE) ---
 # Usa una imagen de Java con Maven para compilar tu aplicación
-# CAMBIA ESTA LÍNEA:
-FROM maven:3.9-openjdk-17 AS build
+# ¡¡¡CAMBIA ESTA LÍNEA EXACTAMENTE ASÍ!!!
+FROM maven:3.9-jdk-17 AS build
 
 # Establece el directorio de trabajo
 WORKDIR /app
