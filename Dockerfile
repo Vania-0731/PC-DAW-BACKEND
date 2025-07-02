@@ -1,6 +1,7 @@
 # --- ETAPA DE CONSTRUCCIÓN (BUILD STAGE) ---
 # Usa una imagen de Java con Maven para compilar tu aplicación
-FROM maven:3.9.6-openjdk-17 AS build
+# CAMBIA ESTA LÍNEA:
+FROM maven:3.9-openjdk-17 AS build
 
 # Establece el directorio de trabajo
 WORKDIR /app
@@ -9,7 +10,6 @@ WORKDIR /app
 COPY pom.xml .
 
 # Descarga las dependencias de Maven
-# Esto aprovecha el caché de Docker: si el pom.xml no cambia, las dependencias no se descargan de nuevo
 RUN mvn dependency:go-offline
 
 # Copia todo el código fuente de la aplicación
